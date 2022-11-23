@@ -12,11 +12,12 @@ main {
 .header__nav {
     align-items: center;
     display: flex;
-    gap: 6.7rem;
+    justify-content: space-between;
+    margin: 0 2rem 0 1rem;
 }
 
-.header__nav-img {
-    width: 6rem;
+.header__nav-logo {
+    width: 5rem;
 }
 
 .mobile-menu-nav-ul {
@@ -40,6 +41,7 @@ main {
 .menu-dropdown-btn {
     background: none;
     border: none;
+    margin-right: 1rem;
 }
 
 .icone-menu-dropdown {
@@ -50,9 +52,11 @@ main {
     display: block;
 }
 
+
+
 /* Responsividade */
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 768px) {
 
 /* Escondendo menu responsivo */
 .mobile-menu-icon {
@@ -65,19 +69,14 @@ main {
 
 /* Fim menu responsivo */
 
-.header__nav {
-    gap: 42%;
-}
-
-.header__nav-img {
+.header__nav-logo {
     height: 100px;
-    margin-left: 2rem;
     width: 100px;
 }
 
 .nav__container-ul {
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.rem;
     gap: 1.5rem;
 }
 
@@ -114,5 +113,3 @@ main {
         gap: 50%;
     }
 }
-
-

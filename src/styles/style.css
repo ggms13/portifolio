@@ -15,11 +15,3 @@ body {
     color: var(--texto-branco);
     font-family: var(--fonte-sans);
 }
-
-.hide {
-    display: none;
-}
-
-.mostraDiv {
-    display: block;
-}

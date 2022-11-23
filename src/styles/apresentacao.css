@@ -1,3 +1,5 @@
+/* Textos */
+
 .container__div-texto {
     margin: auto;
     width: 80%;
@@ -30,7 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
 }
 
 .div-texto__li-a {
@@ -49,25 +51,26 @@
     color: var(--verde);
     font-family: var(--fonte-mono);
     padding: 0.5rem;
-    transition: 500ms;
-    width: 8rem;
+    width: 9rem;
 }
 
 .div-texto__li-btn:hover, .div-texto__li-btn:active {
     background-color: var(--verde-hover);
 }
 
+/* Escondendo a imagem no mobile */
+
+.container__div-imagens {
+    display: none;
+}
 
 
 /* Responsividade */
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 768px) {
 
 .main__container {
-    align-items: center;
     display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    margin: 5rem;
+    margin: 7rem;
 }
 
 .container__div-texto {
@@ -82,28 +85,34 @@
 
 .div-texto__ul {
     flex-direction: row;
-    gap: 5.5rem;
+    gap: 2rem;
     margin-top: 1.5rem;
 }
 
 .div-texto__li-btn:hover {
     transform: scale(1.1);
+    transition: 500ms;
 }
 
 /* Imagem de perfil e background */
 
 .container__div-imagens {
-    background: url(../assets/images/profile-background.svg) center/cover no-repeat;
-    height: 360px;
-    position: relative;
-    width: 45%;
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin-right: 8rem;
+    width: 35%;
 }
 
 .div-imagens__perfil-img {
-    height: 273px;
-    position: absolute;
-    right: 10.2rem;
-    top: 2.6rem;
-    width: 273px;
+    height: 500px;
+    width: 500px;
+}
+}
+
+@media screen and (min-width: 1550px) {
+    .div-imagens__perfil-img {
+    height: 550px;
+    width: 550px;
 }
 }
