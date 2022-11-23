@@ -20,7 +20,7 @@ main {
 }
 
 .mobile-menu-nav-ul {
-    background-color: var(--verde-hover);
+    background-color: var(--azul-escuro);
     line-height: 1.5rem;
     padding: 1rem;
     position: absolute;
