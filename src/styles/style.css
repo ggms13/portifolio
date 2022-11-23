@@ -1,0 +1,25 @@
+:root {
+    --azul-escuro: #21445b;
+    --texto-branco: #ffffff;
+    --texto-claro: #E3EBF2;
+    --verde: #84E4A8;
+    --verde-hover: rgba(100,255,218,0.1);
+    --cor-de-texto-azul: #2EE6E3;
+
+    --fonte-mono: "Fira Code", "SF Mono","Fira Mono","Roboto Mono", monospace;
+    --fonte-sans: "Open Sans","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+body {
+    background-color: var(--azul-escuro);
+    color: var(--texto-branco);
+    font-family: var(--fonte-sans);
+}
+
+.hide {
+    display: none;
+}
+
+.mostraDiv {
+    display: block;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/apresentacao.css">
+
+    <title>Grasiele Gomes</title>
+</head>
+<body>
+    <header>  
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <img class="header__nav-img" src="./src/assets/images/gg-logo.svg" alt="logo">
+            </div>
+            
+            <div class="header__nav-container">
+                <ul class="nav__container-ul">
+                    <li class="header__li"><a class="header__li-a" href="#">Sobre mim</a></li>
+                    <li class="header__li"><a class="header__li-a" href="#">Skills</a></li>
+                    <li class="header__li"><a class="header__li-a" href="#">Projetos</a></li>
+                    <li class="header__li"><a class="header__li-a" href="#">Formação</a></li>
+                    <li class="header__li"><a class="header__li-a li__a-email" href="mailto:grasiele.pgomes@gmail.com">grasiele.pgomes@gmail.com</a></li>
+                </ul>
+            </div>
+           
+            <div class="mobile-menu-icon">
+                <button onclick="mostraMenuBtn()" class="menu-dropdown-btn"><img class="icone-menu-dropdown" src="/src/assets/images/menu-icon.svg" alt="ícone de menu com três linhas"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-ul">
+                <li class="header__li-mobile"><a class="header__li-a-mobile" href="#">Sobre mim</a></li>
+                <li class="header__li-mobile"><a class="header__li-a-mobile" href="#">Skills</a></li>
+                <li class="header__li-mobile"><a class="header__li-a-mobile" href="#">Projetos</a></li>
+                <li class="header__li-mobile"><a class="header__li-a-mobile" href="#">Formação</a></li>
+                <li class="header__li-mobile"><a class="header__li-a-mobile li__a-email-mobile" 
+                    href="mailto:grasiele.pgomes@gmail.com">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <div class="container__div-texto">
+                <p class="div-texto__p">Olá, meu nome é</p>
+                <h1 class="div-texto__titulo"><span class="div-texto__span">Grasiele Gomes</span> <br>e eu construo páginas web.</h1>
+                <p class="div-texto__descricao">Sou uma Desenvolvedora Web com foco em criar 
+                    produtos acessíveis, completos e bonitos para os usuários.</p>
+
+                <ul class="div-texto__ul">
+                    <li class="div-texto__ul__li"><button class="div-texto__li-btn"><a href="https://github.com/ggms13" target="_blank" class="div-texto__li-a">Github</a></button></li>
+                    <li class="div-texto__ul__li"><button class="div-texto__li-btn"><a href="https://www.linkedin.com/in/grasielep-gomes/" target="_blank" class="div-texto__li-a">LinkedIn</a></button></li>
+                    <li class="div-texto__ul__li"><button class="div-texto__li-btn"><a href="#" target="_blank" class="div-texto__li-a">Currículo</a></button></li>
+                </ul>
+            </div>
+
+            <div class="container__div-imagens hide">
+                <img class="div-imagens__perfil-img" src="./src/assets/images/profile.png" alt="foto de Grasiele Gomes">
+            </div>
+        </div>
+    </main>
+
+    <script src="/src/scripts/script.js"></script>
+</body>
+</html>

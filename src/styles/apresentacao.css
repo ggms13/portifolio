@@ -1,0 +1,109 @@
+.container__div-texto {
+    margin: auto;
+    width: 80%;
+}
+
+.div-texto__p {
+    color: var(--verde);
+    font-family: var(--fonte-mono);
+    font-size: 1.2rem;
+}
+
+.div-texto__titulo {
+    color: var(--texto-claro);
+    font-size: 2.2rem;
+}
+
+.div-texto__span {
+    color: var(--texto-branco);
+}
+
+.div-texto__descricao {
+    color: var(--texto-claro);
+    line-height: 1.4rem;
+}
+
+/* Botões */
+
+.div-texto__ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2.5rem;
+}
+
+.div-texto__li-a {
+    text-decoration: none;
+}
+
+.div-texto__li-a:hover, .div-texto__li-a:active {
+    color: var(--verde);
+    text-decoration: none;
+}
+
+.div-texto__li-btn {
+    background-color: transparent;
+    border: 1px solid var(--verde);
+    border-radius: 3px;
+    color: var(--verde);
+    font-family: var(--fonte-mono);
+    padding: 0.5rem;
+    transition: 500ms;
+    width: 8rem;
+}
+
+.div-texto__li-btn:hover, .div-texto__li-btn:active {
+    background-color: var(--verde-hover);
+}
+
+
+
+/* Responsividade */
+@media screen and (min-width: 730px) {
+
+.main__container {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.container__div-texto {
+    width: 40%;
+}
+
+.div-texto__titulo {
+    font-size: 3.4rem;
+}
+
+/* Botões */
+
+.div-texto__ul {
+    flex-direction: row;
+    gap: 5.5rem;
+    margin-top: 1.5rem;
+}
+
+.div-texto__li-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Imagem de perfil e background */
+
+.container__div-imagens {
+    background: url(../assets/images/profile-background.svg) center/cover no-repeat;
+    height: 360px;
+    position: relative;
+    width: 45%;
+}
+
+.div-imagens__perfil-img {
+    height: 273px;
+    position: absolute;
+    right: 10.2rem;
+    top: 2.6rem;
+    width: 273px;
+}
+}
