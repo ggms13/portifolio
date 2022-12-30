@@ -31,7 +31,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 3.5rem;
 }
 
@@ -39,7 +39,8 @@
     text-decoration: none;
 }
 
-.div-texto__li-a:hover, .div-texto__li-a:active {
+.div-texto__li-a:hover,
+.div-texto__li-a:active {
     color: var(--verde);
     text-decoration: none;
 }
@@ -54,65 +55,73 @@
     width: 9rem;
 }
 
-.div-texto__li-btn:hover, .div-texto__li-btn:active {
+.div-texto__li-btn:hover,
+.div-texto__li-btn:active {
     background-color: var(--verde-hover);
 }
 
-/* Escondendo a imagem no mobile */
 
-.container__div-imagens {
-    display: none;
-}
 
 
 /* Responsividade */
 @media screen and (min-width: 768px) {
 
-.main__container {
-    display: flex;
-    margin: 7rem;
-}
+    .container__div-texto {
+        margin: 3.5rem 11rem;
+        width: 50%;
+    }
 
-.container__div-texto {
-    width: 40%;
-}
+    .div-texto__titulo {
+        font-size: 3.5rem;
+    }
 
-.div-texto__titulo {
-    font-size: 3.4rem;
-}
+    .div-texto__descricao {
+        font-size: 1.1rem;
+    }
 
-/* Botões */
+    /* Botões */
 
-.div-texto__ul {
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
+    .div-texto__ul {
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
 
-.div-texto__li-btn:hover {
-    transform: scale(1.1);
-    transition: 500ms;
-}
+    .div-texto__li-btn {
+        font-size: 1.1rem;
+        height: 3rem;
+        width: 9rem;
+    }
 
-/* Imagem de perfil e background */
+    .div-texto__li-btn:hover {
+        transform: scale(1.1);
+        transition: 500ms;
+    }
 
-.container__div-imagens {
-    align-items: center;
-    display: flex;
-    height: 400px;
-    margin-right: 8rem;
-    width: 35%;
-}
-
-.div-imagens__perfil-img {
-    height: 500px;
-    width: 500px;
-}
 }
 
 @media screen and (min-width: 1550px) {
-    .div-imagens__perfil-img {
-    height: 550px;
-    width: 550px;
-}
+    .container__div-texto {
+        margin: 9rem 20rem;
+        width: 60%;
+    }
+
+    .div-texto__titulo {
+        font-size: 4.5rem;
+    }
+
+    .div-texto__descricao {
+        font-size: 1.2rem;
+    }
+
+    .div-texto__ul {
+        gap: 5.6rem;
+        margin-top: 3rem;
+    }
+
+    .div-texto__li-btn {
+        font-size: 1.2rem;
+        height: 3rem;
+        width: 11rem;
+    }
 }

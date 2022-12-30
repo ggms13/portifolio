@@ -1,5 +1,6 @@
 :root {
-    --azul-escuro: #21445b;
+    --azul-escuro: #162E3D;
+    --azul-marinho-cards: #10222E;
     --texto-branco: #ffffff;
     --texto-claro: #E3EBF2;
     --verde: #84E4A8;
@@ -14,4 +15,9 @@ body {
     background-color: var(--azul-escuro);
     color: var(--texto-branco);
     font-family: var(--fonte-sans);
+}
+
+/* Apenas para ajudar na construção, ocultando temporariamente as seções que não estou trabalhando. */
+.hide {
+    display: none;
 }
